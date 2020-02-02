@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "trillo app",
   "main": "index.js",
-  "homepage": "https://rossdalyNCI.github.io/wedding-site",
+  "homepage": "https://feenaghandkillianswedding.github.io/july2020",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
