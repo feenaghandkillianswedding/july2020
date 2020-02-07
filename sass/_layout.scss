@@ -71,6 +71,14 @@
     }
 }
 
+.page-strip-lg-bottom-padding {
+    padding-bottom: 100px;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        padding-bottom: 70px;
+    }
+}
+
 .page-strip-medium-top-padding {
     padding-top: 60px;
 }

@@ -1014,6 +1014,27 @@ body {
   text-decoration: underline;
 }
 
+.map-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map-section__container {
+  border-radius: 10px;
+  background: #fafafa;
+  -webkit-box-shadow: 16px 16px 32px #d5d5d5, 
+ -16px -16px 32px #ffffff;
+          box-shadow: 16px 16px 32px #d5d5d5, 
+ -16px -16px 32px #ffffff;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -1294,6 +1315,16 @@ body {
 @media only screen and (max-width: 519px) and (min-width: 320px) {
   .page-strip-lg-top-padding {
     padding-top: 70px;
+  }
+}
+
+.page-strip-lg-bottom-padding {
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+  .page-strip-lg-bottom-padding {
+    padding-bottom: 70px;
   }
 }
 

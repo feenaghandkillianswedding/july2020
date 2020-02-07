@@ -809,6 +809,22 @@
     text-decoration: underline;
 }
 
+////////////////////////
+// MAP-SECTION
+.map-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        border-radius: 10px;
+        background: #fafafa;
+        box-shadow:  16px 16px 32px #d5d5d5, 
+             -16px -16px 32px #ffffff;
+        overflow: hidden;
+        border: 1px solid white;
+    }
+}
 
 
 
