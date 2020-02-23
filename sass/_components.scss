@@ -817,6 +817,12 @@
 
 .location-list-num {
     text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all .3s ease-in-out .001s;
+
+    &:hover {
+        text-decoration-color: rgba(255, 160, 128, 0.85);
+    }
 }
 
 ////////////////////////
@@ -824,7 +830,12 @@
 .map-section {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 768px) and (min-width: 320px) {
+        justify-content: center;
+    }
 
     &__container {
         border-radius: 10px;
@@ -835,6 +846,89 @@
         border: 1px solid white;
         display: flex;
         padding: 5px;
+    }
+
+    &__details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+        @media only screen and (max-width: 768px) and (min-width: 320px) {
+            flex: auto;
+        }
+    }
+
+    &__content {
+        align-self: flex-start;
+        padding-left: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        position: relative;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            padding-left: 0;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 36px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.4;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        &--reduced-bottom {
+            margin-bottom: 0;
+        }
+    }
+
+    &__information {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #4C5254
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 8px 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        font-weight: 600;
+        color: black;
+        transition-property: box-shadow, color;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2), 0 0px 5px rgba(0, 0, 0, 0.2);
+            color: rgba(255, 160, 128, 0.85);
+        }
+    }
+
+    &__image-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            padding-left: 10px;
+        }
+    }
+
+    &__image-source {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
